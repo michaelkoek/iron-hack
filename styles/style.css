@@ -1,14 +1,36 @@
+:root {
+    --heading-one: 48px;
+    --main-font-color: #e95;
+    --main-green: #1fdd96;
+    --container-size: 1200px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 html, body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.heading-one {
+    font-size: var(--heading-one-whatever);
+    color: var(--main-font-color);
+}
+
 #header {
-    display: flex;
-    justify-content: space-between;
+    background-color: var(--main-green);
+    position: sticky;
+    top: 0;
+}
+
+#hero-container {
+    background-image: linear-gradient(to bottom, var(--main-green), #117c93);
 }
 
 .nav-items {
-    background-color: red;
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -23,11 +45,61 @@ html, body {
     color: white;
     font-weight: bold;
     text-decoration: none;
-    background-color: green;
     padding: 8px 16px;
 }
 
 .nav-items--item a:hover {
     text-decoration: underline;
+    color: grey;
 }
 
+.container {
+    width: var(--container-size);
+    margin: 0 auto;
+}
+
+.hero-flex {
+    display: flex;
+}
+
+.hero-text {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 40px 0 20px;
+}
+
+.hero-image img {
+    width: 550px;
+    height: 420px;
+    object-fit: cover;
+}
+
+.nav-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input {
+    padding: 20px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.button {
+    border: 0;
+    padding: 20px 10px;
+    background-color: var(--main-green);
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px 0px #00000075;
+}
+
+.button:hover {
+    background-color: #0f0;
+    box-shadow: 0 4px 6px 0px #000;
+}

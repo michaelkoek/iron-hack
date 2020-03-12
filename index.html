@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,40 +12,45 @@
 <body>
     <!-- Header -->
     <header id="header">
-        <img src="http://placehold.it/200x50" title="Cool logo" alt="Our company logo" />
-        <!-- navigation -->
-
-        <nav class="main-navigation">
-            <ul class="nav-items">
-                <li class="nav-items--item">
-                    <a href="#" title="Our fun facts">
-                        Fun fact
-                    </a>
-                </li>
-                <li class="nav-items--item"><a href="#">Download</a></li>
-                <li class="nav-items--item"><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <section class="container nav-flex">
+            <img src="http://placehold.it/200x50" title="Cool logo" alt="Our company logo" />
+            
+            <!-- navigation -->
+            <nav class="main-navigation">
+                <ul class="nav-items">
+                    <li class="nav-items--item">
+                        <a href="#" title="Our fun facts">
+                            Fun fact
+                        </a>
+                    </li>
+                    <li class="nav-items--item"><a href="#">Download</a></li>
+                    <li class="nav-items--item"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
     </header>
 
     <!-- HERO -->
     <section id="hero-container">
-        <!-- HERO CONTENT-->
-        <section class="hero-content hero-content">
-            <h1>When you you love turtles, life becomes easier!</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae similique reiciendis nobis dignissimos,
-                repellat perferendis non, dolor dolorem quo ea molestias quibusdam necessitatibus veritatis ducimus
-                temporibus quaerat nisi odit sapiente!</p>
+        <section class="container hero-flex">
+            <!-- HERO CONTENT-->
+            <section class="hero-content hero-text">
+                <h1 class="heading-one">When you you love turtles, life becomes easier!</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae similique reiciendis nobis
+                    dignissimos,
+                    repellat perferendis non, dolor dolorem quo ea molestias quibusdam necessitatibus veritatis ducimus
+                    temporibus quaerat nisi odit sapiente!</p>
 
-            <div>
-                <input type="email" name="email" />
-                <button class="button button-primary">Subscribe now</button>
-            </div>
-        </section>
+                <div>
+                    <input type="email" name="email" class="input" placeholder="Your email address" />
+                    <button class="button button-primary">Subscribe now</button>
+                </div>
+            </section>
 
-        <!-- HERO IMAGE-->
-        <section class="hero-content hero-image">
-            <img src="./images/nice-kitty.jpeg" alt="Hero image" title="company turtle image" />
+            <!-- HERO IMAGE-->
+            <section class="hero-content hero-image">
+                <img src="./images/nice-kitty.jpeg" alt="Hero image" title="company turtle image" />
+            </section>
         </section>
     </section>
 
