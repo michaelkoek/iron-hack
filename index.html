@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Turtles</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">    
 </head>
 
 <body>
@@ -41,7 +42,7 @@
                     repellat perferendis non, dolor dolorem quo ea molestias quibusdam necessitatibus veritatis ducimus
                     temporibus quaerat nisi odit sapiente!</p>
 
-                <div>
+                <div class="subscribe-container">
                     <input type="email" name="email" class="input" placeholder="Your email address" />
                     <button class="button button-primary">Subscribe now</button>
                 </div>
@@ -49,69 +50,77 @@
 
             <!-- HERO IMAGE-->
             <section class="hero-content hero-image">
-                <img src="./images/nice-kitty.jpeg" alt="Hero image" title="company turtle image" />
+                <img src="./images/turtlelogo.svg" alt="Hero image" title="company turtle image" />
             </section>
         </section>
     </section>
 
-    <main>
+    <main class="container">
         <!-- CARDS -->
         <section id="card-container">
             <article class="card-item">
-                <img src="http://placekitten.com/200/200" />
-                <h2>Turtle</h2>
+                <img src="./images/strongheart.svg" title="strong heart, Tough Love" />
+                <h2>Tough love</h2>
+                <span class="card-item-underline"></span>
                 <p>
-                    Hello cool kitten oTHER STUFF sdjflksdf
+                    Some turtles lay eggs in the sand and leave them to hatch on their own. The young turtles make their way to the top of the sand and scramble to the water while trying to avoid predators.
                 </p>
             </article>
             <article class="card-item">
-                <img src="http://placekitten.com/200/200" />
-                <h2>Turtle</h2>
+                <img src="./images/manwoman.svg" alt="gender icon" />
+                <h2>Is it a boy or a girl?!</h2>
+                <span class="card-item-underline"></span>
                 <p>
-                    Hello cool kitten oTHER STUFF sdjflksdf
+                    In some species of turtle the temperature determines if the egg will develop into a male or female, lower temperatures lead to a male while higher temperatures lead to a female.
                 </p>
             </article>
             <article class="card-item">
-                <img src="http://placekitten.com/200/200" />
-                <h2>Turtle</h2>
+                <img src="./images/delicious.svg" title="Very yummy" alt="Girl sticking out tongue" />
+                <h2>Delicious</h2>
+            
+                <span class="card-item-underline"></span>
+            
                 <p>
-                    Hello cool kitten oTHER STUFF sdjflksdf
+                    The Giant Tortoise did not receive a scientific name for over 300 years due to the failure of delivery of specimens to Europe for classification due to their great taste, all were eaten on the voyage back by sailors, even by Charles Darwin.
                 </p>
             </article>
         </section>
 
         <!-- APPINFO -->
         <section id="appinfo-container">
-            <section class="appinfo-img">
-                <img src="http://placekitten.com/600/600" />
+            <section class="appinfo-box appinfo-img">
+                <img src="./images/turtleiPhone.png" title="Download the app" alt="iPhone turtle app" />
             </section>
 
-            <section class="appinfo-content">
+            <section class="appinfo-box appinfo-content">
                 <h2>It taste like premium</h2>
                 <h3>Better than an apple</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt ea itaque totam aliquid nobis
-                    debitis
-                    autem ab recusandae nisi. Quis ad veritatis doloribus quisquam minima quibusdam, aperiam omnis hic
-                    optio?</p>
+                <p>The Teenage Mutant Ninja Turtles (often shortened to TMNT or Ninja Turtles) are four fictional teenaged anthropomorphic turtles named after Italian Renaissance artists. They were trained by their anthropomorphic rat sensei in the art of ninjutsu. From their home in the sewers of New York City, they battle petty criminals, evil overlords, mutated creatures, and alien invaders while attempting to remain hidden from society. They were created by Kevin Eastman and Peter Laird.</p>
                 <button class="button button-primary">Download it now</button>
             </section>
         </section>
 
         <!-- QUOTE -->
+        
         <section id="quote-container">
-            <h2>What our customers say</h2>
-            <section>
+            <h2 class="quote-title">What our customers say</h2>
+
+            <div class="quote-background"></div>
+
+            <section class="quote-items">
                 <article class="quote-item">
                     <p>It was really tasty</p>
                     <span>Mr. Crab</span>
-                </article>
+                </article> <!-- /.quote-item -->
 
                 <article class="quote-item">
                     <p>It was really tasty</p>
                     <span>Mr. Crab</span>
                 </article>
-            </section>
-        </section>
+            </section><!-- /.quote-items -->
+
+        </section><!-- /#quote-container -->
+
     </main>
 
     <footer>
