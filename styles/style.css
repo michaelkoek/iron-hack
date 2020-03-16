@@ -44,6 +44,7 @@ html, body {
     background-color: var(--green);
     position: sticky;
     top: 0;
+    padding: 10px 20px;
 }
 
 .nav-items {
@@ -101,8 +102,7 @@ html, body {
 }
 
 .hero-image img {
-    width: 550px;
-    height: 420px;
+    width: 40vw;
     object-fit: cover;
 }
 
@@ -255,3 +255,54 @@ html, body {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
+
+
+/* FOOTER */
+.footer {
+    margin-top: 50px;
+    height: 164px;
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer span {
+    margin-bottom: 20px;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .hero-flex {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 0 20px;
+    }
+
+    .hero-text {
+        width: auto;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .hero-text .heading-one {
+        margin-bottom: var(--base-size);
+    }
+
+    .nav-flex {
+        flex-direction: column;
+    }
+
+    .subscribe-container {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    
+    .subscribe-container input {
+        margin-right: 0;
+        margin-bottom: var(--base-size);
+    }
+}
+
+
