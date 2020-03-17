@@ -30,6 +30,7 @@ html, body {
 .container {
     max-width: var(--container-size);
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .input {
@@ -302,6 +303,24 @@ html, body {
     .subscribe-container input {
         margin-right: 0;
         margin-bottom: var(--base-size);
+    }
+
+    #card-container {
+        flex-direction: column;
+        margin-top: -5vh;
+    }
+
+    #appinfo-container {
+        flex-direction: column;
+    }
+
+    .appinfo-box {
+        width: 100%;
+        text-align: center;
+    }
+
+    .button {
+        width: 100%;
     }
 }
 
