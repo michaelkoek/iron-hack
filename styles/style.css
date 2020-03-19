@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 :root {
     /* colors */
     --main-color: #348c9e;
@@ -17,14 +19,15 @@
     padding: 0;
 }
 
+
 html, body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
     background-color: #dfdedd;
 }
 
 .heading-one {
     font-size: var(--heading-one);
-    color: var(--main-font-color);
+    color: var(--main-color);
 }
 
 .container {
@@ -257,6 +260,18 @@ html, body {
     border-bottom-left-radius: 20px;
 }
 
+
+/* SUBSCRIBE CTA */
+#cta-container {
+    text-align: center;
+}
+
+#cta-container h3 {
+    color: #cdcdcd;
+    margin: 17px 0 60px;
+    font-size: 34px;
+    font-weight: normal;
+}
 
 /* FOOTER */
 .footer {

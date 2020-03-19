@@ -1,0 +1,75 @@
+@font-face {
+    font-family: Roboto;
+    src: url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+  }
+
+.container {
+  display: flex;
+  font-family: Roboto;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: transform ease 0.5s, width ease-out 0.5s;
+}
+
+.tomato {
+  background-color: tomato;
+}
+
+.orange {
+  background-color: #f90;
+}
+
+.green {
+  background-color: olive;
+}
+
+.box:hover {
+  width: 100px;
+  /* transform: rotate(360deg);  */
+  /* transform: rotateZ(90deg); */
+  /* transform: rotateY(150deg); */
+  /* transform: skew(20deg); */
+  /* transform: scale(.5); */
+}
+
+.box-animate {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  cursor: pointer;
+  background-color: red;
+}
+
+.box-animate:hover {
+  animation: myCoolAnimation 2s infinite;
+}
+
+@keyframes myCoolAnimation {
+  from {
+    background-color: red;
+  }
+
+  to {
+    background-color: yellow;
+  }
+
+  /* 0% {
+          background-color: red;
+          width: 50px;
+        }
+      50% {
+          background-color: yellow;
+          width: 116px;
+        }
+
+        100% {
+            background-color: red;
+          width: 50px;
+        } */
+}
